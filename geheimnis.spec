@@ -6,11 +6,10 @@ Release:	1
 License:	GPL
 Group:		X11/Applications
 Vendor:		Chris Wiegand <cwiegand@urgentmail.com>
-Source0:	ftp://ftp.sourceforge.net/pub/sourceforge/geheimnis/%{name}-%{version}.tar.gz
+Source0:	http://dl.sourceforge.net/geheimnis/%{name}-%{version}.tar.gz
 URL:		http://geheimnis.sourceforge.net/
 BuildRequires:	kdelibs-devel
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
-
 
 %description
 Geheimnis is a KDE program for using GnuPG, PGP2, and PGP5 in a
