@@ -36,11 +36,11 @@ if [ -z "$KDEDIR" ]; then
 	export KDEDIR=%{_prefix}
 fi
 ./configure --build-rpms
-make CFLAGS="$RPM_OPT_FLAGS -I. -Wall"
+%{__make} CFLAGS="$RPM_OPT_FLAGS -I. -Wall"
 
 %install
 rm -rf $RPM_BUILD_ROOT
-make DESTDIR=$RPM_BUILD_ROOT install
+%{__make} DESTDIR=$RPM_BUILD_ROOT install
 
 cd $RPM_BUILD_ROOT
 find . -type d | sed '1,2d;s,^\.,\%attr(-\,root\,root) \%dir ,' > $RPM_BUILD_DIR/file.list.%{name}
