@@ -4,10 +4,11 @@ Name:		geheimnis
 Version:	0.60
 Release:	1
 License:	GPL
-Group:		X11/KDE/Utilities
-######		Unknown group!
+Group:		X11/Applications
+Group(de):	X11/Applikationen
+Group(pl):	X11/Aplikacje
 Vendor:		Chris Wiegand <cwiegand@urgentmail.com>
-Source0:	%{name}-%{version}.tar.gz
+Source0:	http://munitions.vipul.net/software/pgp/frontend/%{name}_%{version}.tar.gz
 Patch0:		%{name}-%{version}.patch
 URL:		http://members.home.com/cdwiegand/geheimnis
 BuildRequires:	qt-devel >= 1.42
