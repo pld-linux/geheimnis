@@ -17,6 +17,11 @@ Geheimnis is a KDE program for using GnuPG, PGP2, and PGP5 in a graphical
 manner reminiscent of Win31's PGP shells. It is built and tested under KDE
 1.0 (actually, revision 0.99 it appears).
 
+%description -l pl
+Geheminis jest programem KDE umozliwiaj±cym u¿ycie GNUPG, PGP2 i PGP5 poprzez
+interfejs graficzny, podobnie jak w pow³okach PGP Windows 3.1x. Program
+zosta³ zbudowany i przetestowany pod KDE 1.0 (a dok³adnie w wersji 0.99).
+
 %prep
 %setup -q
 %patch -p1
