@@ -8,8 +8,8 @@ Vendor:		Chris Wiegand <cwiegand@urgentmail.com>
 Source:		%{name}-%{version}.tar.gz
 Patch:		%{name}-%{version}.patch
 URL:		http://members.home.com/cdwiegand/geheimnis
-BuildPrereq:	qt-devel >= 1.42
-BuildPrereq:	kdesupport-devel
+BuildRequires:	qt-devel >= 1.42
+BuildRequires:	kdesupport-devel
 BuildRoot:	/tmp/%{name}-%{version}-root
 
 %description
