@@ -10,7 +10,7 @@ Patch:		%{name}-%{version}.patch
 URL:		http://members.home.com/cdwiegand/geheimnis
 BuildRequires:	qt-devel >= 1.42
 BuildRequires:	kdesupport-devel
-BuildRoot:	/tmp/%{name}-%{version}-root
+BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
 Geheimnis is a KDE program for using GnuPG, PGP2, and PGP5 in a graphical
