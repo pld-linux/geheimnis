@@ -1,4 +1,5 @@
-Summary:	Geheimnis: KDE program for using GnuPG, PGP2, and PGP5 in a graphical manner.
+Summary:	Geheimnis: KDE program for using GnuPG, PGP2, and PGP5 in a graphical manner
+Summary(pl):	Graficzny interfejs pod KDE do programów GnuPG, PGP2 i PGP5
 Name:		geheimnis
 Version:	0.60
 Release:	1
@@ -36,7 +37,7 @@ if [ -z "$KDEDIR" ]; then
 	export KDEDIR=%{_prefix}
 fi
 ./configure --build-rpms
-%{__make} CFLAGS="$RPM_OPT_FLAGS -I. -Wall"
+%{__make} CFLAGS="%{rpmcflags} -I. -Wall"
 
 %install
 rm -rf $RPM_BUILD_ROOT
