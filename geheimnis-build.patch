@@ -1,0 +1,31 @@
+--- geheimnis/geheimnis/profilemanager.cpp.orig	Sun Aug  4 20:56:42 2002
++++ geheimnis/geheimnis/profilemanager.cpp	Thu Nov 27 16:29:35 2003
+@@ -30,7 +30,7 @@
+ 
+ ProfileManager::~ProfileManager() {
+   // not sure if we could use gDebug() here:
+-  std::cerr << "~ProfileManager" << endl;
++  std::cerr << "~ProfileManager" << std::endl;
+ 
+   // _we_ have to delete the profiles, since we are Profile's only friend :-)
+   for ( QValueList<Profile*>::Iterator it = mProfiles.begin() ;
+--- geheimnis/configure.orig	Sun Aug  4 21:36:34 2002
++++ geheimnis/configure	Thu Nov 27 16:31:54 2003
+@@ -6911,7 +6911,7 @@
+    
+    LIB_SMB='-lsmb'
+    
+-   LIB_KFILE='-lkfile'
++   LIB_KFILE='-lkio'
+    
+    LIB_KAB='-lkab'
+    
+@@ -6930,7 +6930,7 @@
+    
+    LIB_KFM='-lkfm $(LIB_KDECORE)'
+    
+-   LIB_KFILE='-lkfile $(LIB_KFM) $(LIB_KDEUI)'
++   LIB_KFILE='-lkio $(LIB_KFM) $(LIB_KDEUI)'
+    
+    LIB_KAB='-lkab $(LIB_KIMGIO) $(LIB_KDECORE)'
+    
