@@ -28,12 +28,14 @@ poprzez interfejs graficzny, podobnie jak w pow³okach PGP Windows
 
 %build
 kde_icondir="%{_pixmapsdir}"; export kde_icondir
+CXXFLAGS="%{rpmcflags} -fno-rtti -fno-exceptions"
 %configure2_13
 
 %{__make}
 
 %install
 rm -rf $RPM_BUILD_ROOT
+
 %{__make} install \
 	DESTDIR=$RPM_BUILD_ROOT
 
