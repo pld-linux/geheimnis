@@ -7,6 +7,7 @@ License:	GPL
 Group:		X11/Applications
 Vendor:		Chris Wiegand <cwiegand@urgentmail.com>
 Source0:	http://dl.sourceforge.net/geheimnis/%{name}-%{version}.tar.gz
+# Source0-md5:	048a1e1f016cdf4343aee5d153625d24
 URL:		http://geheimnis.sourceforge.net/
 BuildRequires:	kdelibs-devel
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
