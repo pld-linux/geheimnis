@@ -29,7 +29,9 @@ poprzez interfejs graficzny, podobnie jak w pow³okach PGP Windows
 %build
 kde_icondir="%{_pixmapsdir}"; export kde_icondir
 CXXFLAGS="%{rpmcflags} -fno-rtti -fno-exceptions"
-%configure2_13
+%configure2_13 \
+	--enable-mt \
+	--enable-final
 
 %{__make}
 
@@ -41,14 +43,12 @@ rm -rf $RPM_BUILD_ROOT
 
 mv -f $RPM_BUILD_ROOT%{_applnkdir}/{Applications,Utilities}
 
-gzip -9nf AUTHORS NEWS TODO
-
 %clean
 rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc *.gz
+%doc AUTHORS NEWS TODO
 %attr(755,root,root) %{_bindir}/*
 %{_datadir}/apps/geheimnis
 %{_pixmapsdir}/*/*/apps/*
