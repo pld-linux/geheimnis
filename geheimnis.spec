@@ -11,8 +11,6 @@ URL:		http://geheimnis.sourceforge.net/
 BuildRequires:	kdelibs-devel
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
-%define		_prefix		/usr/X11R6
-%define		_mandir		%{_prefix}/man
 
 %description
 Geheimnis is a KDE program for using GnuPG, PGP2, and PGP5 in a
