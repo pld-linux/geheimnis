@@ -1,5 +1,5 @@
 Summary:	Geheimnis: KDE program for using GnuPG, PGP2, and PGP5 in a graphical manner
-Summary(pl):	Graficzny interfejs pod KDE do programÛw GnuPG, PGP2 i PGP5
+Summary(pl.UTF-8):   Graficzny interfejs pod KDE do program√≥w GnuPG, PGP2 i PGP5
 Name:		geheimnis
 Version:	1.98
 Release:	1
@@ -19,9 +19,9 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 Geheimnis is a KDE program for using GnuPG, PGP2, and PGP5 in a
 graphical manner reminiscent of Win31's PGP shells.
 
-%description -l pl
-Geheminis jest programem KDE umoøliwiaj±cym uøywanie GNUPG, PGP2 i
-PGP5 poprzez interfejs graficzny, podobnie jak w pow≥okach PGP Windows
+%description -l pl.UTF-8
+Geheminis jest programem KDE umo≈ºliwiajƒÖcym u≈ºywanie GNUPG, PGP2 i
+PGP5 poprzez interfejs graficzny, podobnie jak w pow≈Çokach PGP Windows
 3.1x.
 
 %prep
