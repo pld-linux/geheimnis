@@ -1,5 +1,5 @@
 Summary:	Geheimnis: KDE program for using GnuPG, PGP2, and PGP5 in a graphical manner
-Summary(pl.UTF-8):   Graficzny interfejs pod KDE do programów GnuPG, PGP2 i PGP5
+Summary(pl.UTF-8):	Graficzny interfejs pod KDE do programów GnuPG, PGP2 i PGP5
 Name:		geheimnis
 Version:	1.98
 Release:	1
