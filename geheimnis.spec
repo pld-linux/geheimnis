@@ -26,7 +26,7 @@ PGP5 poprzez interfejs graficzny, podobnie jak w powłokach PGP Windows
 
 %prep
 %setup -q -n %{name}
-%patch0 -p1
+%patch -P0 -p1
 
 %build
 kde_appsdir="%{_applnkdir}"; export kde_appsdir
